@@ -1,0 +1,1377 @@
+/* line 2, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/style.sass */
+* {
+  font-family: Roboto, sans-serif;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+nav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #212121;
+  z-index: 2;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.menu_link {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 0 17px 0;
+  width: 100%;
+}
+
+/* line 39, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 42, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_descr {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_call {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 28px;
+  text-align: right;
+}
+
+/* line 61, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_phone:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 64, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subheader_btn {
+  display: block;
+  height: 46px;
+  width: 172px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.11);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.promo {
+  background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
+  min-height: 800px;
+  padding: 151px 0 132px 0;
+}
+
+/* line 83, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.promo_head {
+  font-size: 60px;
+  line-height: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.promo_subhead {
+  font-size: 32px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* line 100, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.promo_text {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 107, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  width: 265px;
+  height: 69px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.11);
+  font-size: 18px;
+  line-height: 68px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-radius: 7px;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 124, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages {
+  padding: 71px 0 65px 0;
+}
+
+/* line 126, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages_eight {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 38px;
+  text-align: center;
+}
+
+/* line 133, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages_block {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 138, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages_rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+  width: 113px;
+  padding: 23px 0 23px 0px;
+  margin-right: 26px;
+}
+
+/* line 148, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages_descr {
+  width: 343px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #202020;
+}
+
+/* line 154, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.avantages_descr_head {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1eacc7;
+  line-height: 24px;
+}
+
+/* line 159, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities {
+  padding: 48px 0 79px 0;
+  min-height: 864px;
+  background-color: #1eacc7;
+  background: url(../img/bg/bg_app_pattern.jpg) center center/cover no-repeat;
+}
+
+/* line 164, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities .row {
+  margin-top: 32px;
+}
+
+/* line 166, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_head {
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 4px 0;
+  text-align: center;
+  margin: auto;
+}
+
+/* line 177, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_mobile_application {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 38px;
+  text-align: center;
+}
+
+/* line 184, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #222222;
+  margin-top: 19px;
+  text-align: center;
+}
+
+/* line 190, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 197, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_1 {
+  background: url(../img/order_by_one_clic.jpg) center center/cover no-repeat;
+}
+
+/* line 199, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_2 {
+  background: url(../img/hope_delevery.jpg) center center/cover no-repeat;
+}
+
+/* line 201, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_3 {
+  background: url(../img/transparency_price.jpg) center center/cover no-repeat;
+}
+
+/* line 203, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_4 {
+  background: url(../img/payement_by_card.jpg) center center/cover no-repeat;
+}
+
+/* line 205, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_5 {
+  background: url(../img/feedback.jpg) center center/cover no-repeat;
+}
+
+/* line 207, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_6 {
+  background: url(../img/divide_price.jpg) center center/cover no-repeat;
+}
+
+/* line 209, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_text {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 216, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 56%;
+  transform: translateX(-100%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 230, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 1px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 237, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_plus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 248, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_img_plus:hover:before, .possibilities_img_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 250, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.label {
+  position: relative;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  width: 112px;
+  height: 24px;
+  background-color: #070716;
+  text-align: center;
+  padding: 5px 12px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* line 263, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 267, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.title {
+  position: relative;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 32px;
+  z-index: 2;
+}
+
+/* line 276, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 278, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subtitle {
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 19px;
+  z-index: 2;
+}
+
+/* line 286, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 288, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_bis {
+  position: relative;
+  min-height: 895px;
+  background: url(../img/bg/bg_w_pattern.jpg) center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+}
+
+/* line 293, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_bis_img {
+  display: block;
+  position: relative;
+  margin: 54px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 298, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_bis_text {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+}
+
+/* line 304, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.possibilities_bis .blck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #070716;
+  height: 499px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 313, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements {
+  padding: 68px 0 84px 0;
+}
+
+/* line 315, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_possibilities {
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  padding: 5px 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 326, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_title {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 33px;
+  text-align: center;
+}
+
+/* line 333, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_block {
+  margin-top: 33px;
+}
+
+/* line 335, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_nmt {
+  margin-top: 0px;
+}
+
+/* line 337, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_descr_head {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+
+/* line 342, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_descr_footer {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #1ca8c3;
+}
+
+/* line 347, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_puce, .requirements_red_puce {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 12px;
+}
+
+/* line 351, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_puce li, .requirements_red_puce li {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+/* line 358, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_puce li:before, .requirements_red_puce li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue_001.svg") center center/cover no-repeat;
+}
+
+/* line 370, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_red_puce li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url(../icons/check_red_001.svg) center center/cover no-repeat;
+}
+
+/* line 380, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_descr_red {
+  margin-top: 62px;
+}
+
+/* line 382, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.requirements_descr_red_head {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ff5656;
+}
+
+/* line 387, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world {
+  position: relative;
+  background: url(../img/world.jpg) center center/cover no-repeat;
+  min-height: 717px;
+  padding: 49px 0;
+}
+
+/* line 392, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world_link_foot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  text-align: center;
+  line-height: 68px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1eacc7;
+}
+
+/* line 403, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world_link_foot:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 406, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world_city {
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #070716;
+  width: 76px;
+  height: 24px;
+  background-color: #ffffff;
+  padding: 6px 0 6px 0;
+  text-align: center;
+  margin: auto;
+}
+
+/* line 417, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world_title {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 38px;
+  text-align: center;
+}
+
+/* line 424, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.world_subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 431, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 31px 23px;
+}
+
+/* line 434, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 437, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_devider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: auto;
+}
+
+/* line 442, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 447, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 449, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 452, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 456, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #070716;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+}
+
+/* line 465, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 467, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 470, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 474, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 479, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links_sub_menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 483, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links_sub_menu a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 488, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 68px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  color: #1fbad6;
+  text-align: center;
+}
+
+/* line 498, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_head {
+    font-size: 50px;
+  }
+  /* line 11, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_block {
+    align-items: flex-start;
+  }
+  /* line 13, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_descr {
+    width: 300px;
+  }
+  /* line 16, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_1 {
+    width: 295px;
+  }
+  /* line 18, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_2 {
+    width: 295px;
+  }
+  /* line 20, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_3 {
+    width: 295px;
+  }
+  /* line 22, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_4 {
+    width: 295px;
+  }
+  /* line 24, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_5 {
+    width: 295px;
+  }
+  /* line 26, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_6 {
+    width: 295px;
+  }
+  /* line 28, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_text {
+    font-size: 20px;
+  }
+  /* line 31, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img {
+    width: 250px;
+  }
+  /* line 33, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis {
+    min-height: 840px;
+    padding: 55px 0;
+  }
+  /* line 36, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_head {
+    font-size: 32px;
+  }
+  /* line 39, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_title {
+    font-size: 32px;
+  }
+  /* line 42, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .require br {
+    display: none;
+  }
+  /* line 45, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 47, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 49, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 53, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+  }
+  /* line 55, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  /* line 57, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 61, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 63, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 67, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 69, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_descr {
+    font-size: 12px;
+  }
+  /* line 71, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 16px;
+  }
+  /* line 73, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_btn {
+    height: 40px;
+    width: 100%;
+  }
+  /* line 77, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_head {
+    font-size: 40px;
+  }
+  /* line 79, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_subhead {
+    font-size: 30px;
+  }
+  /* line 81, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_btn {
+    width: 220px;
+    height: 67px;
+  }
+  /* line 85, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 88, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_rounded {
+    margin-right: 0;
+  }
+  /* line 90, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 93, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_eight {
+    font-size: 32px;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_mobile_application {
+    font-size: 32px;
+  }
+  /* line 98, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img {
+    width: 230px;
+  }
+  /* line 100, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_text {
+    font-size: 17px;
+  }
+  /* line 102, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis {
+    min-height: 800px;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_img {
+    width: 100%;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_head {
+    font-size: 30px;
+  }
+  /* line 109, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_title {
+    font-size: 30px;
+  }
+  /* line 111, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world {
+    min-height: 650px;
+  }
+  /* line 113, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world_title {
+    font-size: 30px;
+  }
+  /* line 116, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 123, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 125, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 129, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 141, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_item {
+    margin: 10px;
+    padding: 0;
+    border-right: none;
+  }
+  /* line 147, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 19px;
+  }
+  /* line 149, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages {
+    padding: 40px 0;
+  }
+  /* line 151, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_descr_head {
+    text-align: center;
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements {
+    padding: 40px 0;
+  }
+  /* line 155, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 163, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 171, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 173, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 175, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 177, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 179, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 181, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 184, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+  }
+  /* line 191, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 0 auto;
+  }
+  /* line 197, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_head {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  /* line 200, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities {
+    min-height: 600px;
+    padding: 40px 0;
+  }
+  /* line 203, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis {
+    min-height: 600px;
+    padding: 40px 0;
+  }
+  /* line 206, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 209, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 211, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 213, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+    z-index: 2;
+  }
+  /* line 216, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 220, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 18px;
+    display: block;
+  }
+  /* line 223, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader {
+    height: 62px;
+    top: 30px;
+    padding: 12px 0 17px 0;
+  }
+  /* line 227, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_descr {
+    display: none;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 10px;
+  }
+  /* line 231, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -8px;
+  }
+  /* line 237, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+  /* line 242, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .subheader_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 244, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 73px 0 35px 0;
+  }
+  /* line 247, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_text {
+    display: none;
+  }
+  /* line 249, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_head {
+    font-size: 30px;
+    padding: 0 23px;
+    line-height: 35px;
+  }
+  /* line 253, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_subhead {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 23px;
+    margin-top: 33px;
+  }
+  /* line 258, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  /* line 263, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .promo_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 265, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages {
+    padding: 23px 0 38px 0;
+  }
+  /* line 267, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_block {
+    margin-top: 24px;
+  }
+  /* line 269, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_eight {
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+  /* line 273, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_rounded {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 276, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_descr {
+    width: 100%;
+    margin-top: 24px;
+  }
+  /* line 279, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .avantages_descr_head {
+    font-size: 16px;
+    text-align: left;
+  }
+  /* line 283, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_mobile_application {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  /* line 286, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img {
+    width: 290px;
+    height: 254px;
+  }
+  /* line 289, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_text {
+    font-size: 18px;
+  }
+  /* line 291, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_img_plus {
+    left: 55%;
+  }
+  /* line 293, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis {
+    padding: 27px 0 31px 0;
+    min-height: 393px;
+    background: #000;
+  }
+  /* line 297, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_header {
+    margin-top: 0;
+  }
+  /* line 299, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_img {
+    z-index: 1;
+    margin-top: 35px;
+  }
+  /* line 302, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis_text {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  /* line 307, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .possibilities_bis .blck {
+    display: none;
+  }
+  /* line 309, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .hidden_320 {
+    display: none;
+  }
+  /* line 311, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements {
+    padding: 24px 0 30px 0;
+  }
+  /* line 313, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+  /* line 317, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_descr_head {
+    font-size: 16px;
+  }
+  /* line 320, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_puce li, .requirements_red_puce li {
+    font-size: 14px;
+  }
+  /* line 322, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_descr_footer {
+    font-size: 14px;
+  }
+  /* line 324, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_descr_red_head {
+    font-size: 16px;
+  }
+  /* line 326, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .requirements_descr_red {
+    margin-top: 20px;
+  }
+  /* line 328, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world {
+    padding: 26px 0 30px 0;
+    min-height: 360px;
+  }
+  /* line 331, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world_title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+  /* line 335, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world_subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 11px;
+  }
+  /* line 339, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .world_link_foot {
+    width: 200px;
+    display: block;
+    bottom: 22px;
+    line-height: 15px;
+  }
+  /* line 344, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  footer {
+    padding: 24px 0 30px 0;
+  }
+  /* line 347, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_devider {
+    width: 255px;
+    height: 6px;
+    margin: 0 auto;
+  }
+  /* line 351, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper {
+    margin-top: 21px;
+  }
+  /* line 353, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 22px;
+  }
+  /* line 355, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 357, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 359, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 361, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_links {
+    width: 290px;
+    padding: 0;
+  }
+  /* line 365, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_links_main a {
+    font-size: 14px;
+  }
+  /* line 367, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_links_sub_menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 24px;
+  }
+  /* line 371, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_links_sub_menu a {
+    margin: 0 24px;
+  }
+  /* line 373, ../../../../../../../../../../../../../Users/lunelnz/Desktop/Projet_Uber/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
